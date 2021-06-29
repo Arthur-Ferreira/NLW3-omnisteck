@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map as LeafletMap, MapProps as LeafletMapProps, TileLayer } from 'react-leaflet'
+import { MapContainer as LeafletMap, MapProps as LeafletMapProps, TileLayer } from 'react-leaflet'
 
 interface MapProps extends LeafletMapProps {
   interactive?: boolean
@@ -26,4 +26,3 @@ export default function Map({ children, interactive = true, ...props }: MapProps
     </LeafletMap>
   );
 }
-
